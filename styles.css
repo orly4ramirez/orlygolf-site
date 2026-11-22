@@ -1,0 +1,111 @@
+:root {
+  --green: #1b5e20;
+  --green-dark: #0f3d14;
+  --green-light: #e8f3e8;
+  --paper: #fbf8ef;
+  --ink: #1f2a1f;
+  --ink-soft: #5d6b5d;
+  --line: #d5dcd5;
+  --white: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+a { color: var(--green); }
+a:hover { color: var(--green-dark); }
+
+header {
+  background: var(--green-dark);
+  color: var(--white);
+  padding: 1.1rem 1.25rem;
+}
+
+header .wrap, main, footer .wrap {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+
+.brand:hover { color: var(--green-light); }
+
+main { padding: 2.25rem 1.25rem 3rem; }
+
+h1 {
+  font-size: 2.15rem;
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+  color: var(--green-dark);
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 2rem 0 0.5rem;
+  color: var(--green-dark);
+}
+
+.lede {
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  margin: 0 0 1.75rem;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.features li {
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.features li:last-child { border-bottom: 1px solid var(--line); }
+
+.features strong {
+  display: block;
+  color: var(--green-dark);
+}
+
+.badge {
+  display: inline-block;
+  background: var(--green-light);
+  color: var(--green-dark);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  margin: 0 0 1rem;
+}
+
+.note { color: var(--ink-soft); margin: 0 0 0.4rem; }
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 1.25rem 1.25rem 2rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+footer .wrap { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
+
+.policy p { margin: 0 0 0.9rem; }
+.policy ul { margin: 0 0 0.9rem; padding-left: 1.2rem; }
+.updated { color: var(--ink-soft); font-size: 0.95rem; margin-bottom: 1.5rem; }
