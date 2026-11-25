@@ -109,3 +109,9 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
 .policy p { margin: 0 0 0.9rem; }
 .policy ul { margin: 0 0 0.9rem; padding-left: 1.2rem; }
 .updated { color: var(--ink-soft); font-size: 0.95rem; margin-bottom: 1.5rem; }
+
+/* screenshots row: scrolls sideways on small screens */
+.shots { display: flex; gap: 14px; overflow-x: auto; padding: 4px 2px 14px; margin: 22px 0 8px; -webkit-overflow-scrolling: touch; }
+.shots figure { margin: 0; flex: 0 0 auto; width: 170px; text-align: center; }
+.shots img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 18px; background: var(--white); display: block; }
+.shots figcaption { margin-top: 6px; font-size: 0.85rem; color: var(--ink-soft); }
