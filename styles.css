@@ -115,3 +115,9 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
 .shots figure { margin: 0; flex: 0 0 auto; width: 170px; text-align: center; }
 .shots img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 18px; background: var(--white); display: block; }
 .shots figcaption { margin-top: 6px; font-size: 0.85rem; color: var(--ink-soft); }
+/* wider screens: all ten in two rows, wider than the text column */
+@media (min-width: 46rem) {
+  .shots { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px 14px; overflow: visible;
+    width: min(54rem, calc(100vw - 3rem)); margin-left: 50%; transform: translateX(-50%); }
+  .shots figure { width: auto; }
+}
